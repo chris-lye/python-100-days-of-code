@@ -12,7 +12,7 @@ URL = 'https://www.linkedin.com/jobs/search/?currentJobId=3312205122&f_AL=true&f
 chrome_driver_path = r'C:\Users\ChrisLye\Documents\DevDependencies\chromedriver_win32\chromedriver'
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 driver.get(URL)
-time.sleep(1)
+time.sleep(5)
 # click on sign in
 sign_in_button = driver.find_element(By.LINK_TEXT, ("Sign in"))
 sign_in_button.click()
